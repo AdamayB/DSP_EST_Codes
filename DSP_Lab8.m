@@ -1,10 +1,10 @@
 clc
 clear all
 % Pass Band edge/ Transition width/pass band ripple/ stop band attenuation
-pbEdge=input("Enter Passband edge Freq:");
-tranwid=input("Enter Transition Width:");
-pbRipple=input("Enter Passband Ripple:");
-sbAtt=input("Enter Stop Band Attenuation:");
+pbEdge=input("Enter Passband edge Freq:"); %0.1
+tranwid=input("Enter Transition Width:"); %0.6
+pbRipple=input("Enter Passband Ripple:"); %0.06
+sbAtt=input("Enter Stop Band Attenuation:"); %0.36
 wp1=pbEdge*pi;
 wp2=tranwid*pi;
 ws1=pbRipple*pi;
