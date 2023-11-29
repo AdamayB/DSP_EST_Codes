@@ -1,11 +1,11 @@
 N=51;
 n=0:N-1;
-N_Freq1=input('Enter the value of normalized frequency1: ');
+N_Freq1=input('Enter the value of normalized frequency1: ');%0.15
 x1=sin(2*pi*N_Freq1*n);
-N_Freq2=input('Enter the value of normalized frequency2: '); 
-N_Freq3=input('Enter the value of normalized frequency3: ');
+N_Freq2=input('Enter the value of normalized frequency2: '); %0.1
+N_Freq3=input('Enter the value of normalized frequency3: ');%0.3
 x2=sin(2*pi*N_Freq2*n)+sin(2*pi*N_Freq3*n);
-M=input('Value of up sampling factor: ');
+M=input('Value of up sampling factor: ');%5
 y1=upsample(x1,M);
 L1=length(y1);
 y2=upsample(x2,M);
